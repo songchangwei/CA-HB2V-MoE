@@ -1,0 +1,26 @@
+{
+  "wavlm_only": {
+    "total_parameters": 315717060,
+    "trainable_parameters": 791300,
+    "frozen_parameters": 314925760,
+    "trainable_percent": 0.25063580663015167
+  },
+  "wavlm_fullband_mfcc": {
+    "total_parameters": 316184260,
+    "trainable_parameters": 1258500,
+    "frozen_parameters": 314925760,
+    "trainable_percent": 0.3980274033881383
+  },
+  "standard_hierarchical_moe": {
+    "total_parameters": 317632587,
+    "trainable_parameters": 2706827,
+    "frozen_parameters": 314925760,
+    "trainable_percent": 0.8521880659555878
+  },
+  "ca_hb2v_moe": {
+    "total_parameters": 317641291,
+    "trainable_parameters": 2715531,
+    "frozen_parameters": 314925760,
+    "trainable_percent": 0.8549049122206218
+  }
+}

@@ -1,0 +1,27 @@
+# Minimal example. Replace manifest/audio paths and the WavLM checkpoint.
+dataset:
+  train_manifest: manifests/train.csv
+  val_manifest: manifests/val.csv
+  audio_root: null
+  sample_rate: 16000
+  max_duration_seconds: 6.0
+  label_column: label
+model:
+  wavlm_name: /path/to/current-finetuned-wavlm-large
+  # wavlm_checkpoint: /path/to/stage1_checkpoint.pt
+  d_model: 256
+  mfcc_hidden_dim: 128
+  dropout: 0.1
+  load_balance_weight: 0.01
+trainer:
+  output_dir: outputs/CA-HB2V-MoE
+  epochs: 50
+  batch_size: 32
+  lr: 0.0001
+  min_lr: 0.0000001
+  weight_decay: 0.00001
+  warmup_ratio: 0.1
+  mixed_precision: fp16
+  progress_bar: true
+  log_filename: train.log
+seed: 42
